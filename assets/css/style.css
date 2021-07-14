@@ -1,0 +1,128 @@
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre,
+form, fieldset, input, textarea, p, blockquote, th, td {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+fieldset, img {
+  border: 0;
+}
+
+strong {
+  font-weight: bold;
+}
+
+ol, ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  font-weight: 100;
+  font-family: "Tourney", cursive;
+}
+
+p {
+  font-weight: 100;
+}
+
+i {
+  display: flex;
+  align-items: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1a1a1a;
+  color: #eff9fa;
+  font-family: "Bona Nova", serif;
+}
+
+.quote-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+}
+.quote-wrapper .quote {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row wrap;
+  max-width: 800px;
+  min-width: 50vw;
+}
+.quote-wrapper .quote .author-name {
+  font-size: 50px;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 800px) {
+  .quote-wrapper .quote .author-name {
+    font-size: 35px;
+  }
+}
+.quote-wrapper .quote .content {
+  flex: 1;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.quote-wrapper .quote .content .photo {
+  height: 400px;
+  flex-basis: 60%;
+  min-width: 60%;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+.quote-wrapper .quote .content blockquote {
+  position: relative;
+  flex-basis: calc(40%);
+  font-size: 24px;
+  padding: 10px 30px 30px 60px;
+  background-color: #1f1f1f;
+}
+.quote-wrapper .quote .content blockquote .quote-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0397a8;
+  height: 40px;
+  width: 40px;
+}
+.quote-wrapper .quote .content blockquote .quote-icon i {
+  font-size: 20px;
+}
+@media screen and (max-width: 800px) {
+  .quote-wrapper .quote .content {
+    margin: 0 20px;
+  }
+  .quote-wrapper .quote .content .photo, .quote-wrapper .quote .content blockquote {
+    flex-basis: 100%;
+  }
+  .quote-wrapper .quote .content blockquote {
+    padding: 20px 20px 20px 60px;
+  }
+  .quote-wrapper .quote .content blockquote .quote-icon {
+    transform: translateY(-50%);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
